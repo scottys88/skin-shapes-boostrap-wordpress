@@ -1,7 +1,7 @@
 {
   "browserSyncOptions" : {
-    "proxy": "localhost/wordpress/",
-    "notify": false
+    "proxy": "http://localhost:8080/skin-shapes-bootstrap-wordpress/wordpress-4.9.4/wordpress/",
+    "notify": true
   },
   "browserSyncWatchFiles" : [
     "./css/*.min.css",
