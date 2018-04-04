@@ -10461,6 +10461,97 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
+body {
+  font-family: 'Amatic SC', cursive; }
+
+#wrapper-navbar {
+  background-color: #efefef;
+  width: 100%;
+  text-align: center;
+  display: none; }
+  #wrapper-navbar ul {
+    list-style-type: none;
+    display: inline;
+    margin: 0 auto;
+    width: 100%; }
+    #wrapper-navbar ul li {
+      display: inline-block;
+      padding: 10px 50px 10px 50px;
+      margin-left: auto;
+      font-size: 180%; }
+      #wrapper-navbar ul li a {
+        color: #000; }
+  @media (min-width: 768px) {
+    #wrapper-navbar {
+      display: inline-block; } }
+
+#topNavMobile {
+  z-index: 999;
+  background-color: #FF96FF; }
+  @media (min-width: 768px) {
+    #topNavMobile {
+      display: none; } }
+  #topNavMobile .mobile-menu-toggle {
+    float: right;
+    padding-right: 25px;
+    font-size: 200%; }
+  #topNavMobile ul.mobile-menu.inactive {
+    display: none; }
+  #topNavMobile ul.mobile-menu.active {
+    text-align: center;
+    height: 100vh;
+    margin: auto;
+    padding-left: 0; }
+    #topNavMobile ul.mobile-menu.active li {
+      list-style: none;
+      line-height: 50px;
+      font-size: 200%;
+      color: #000;
+      border-bottom: 1px solid #ffff72;
+      padding: 10px 0 10px 0; }
+      #topNavMobile ul.mobile-menu.active li p.mobile-menu-p {
+        padding: 20px 0 20px 0; }
+    #topNavMobile ul.mobile-menu.active .header-link-mobile {
+      color: #000; }
+    #topNavMobile ul.mobile-menu.active .mobile-menu-icon {
+      float: left;
+      padding-left: 20px; }
+
+.footer-container {
+  margin-top: 25px;
+  background-color: #efefef; }
+  .footer-container .footer-content {
+    margin-top: auto;
+    margin-bottom: auto; }
+  .footer-container .shipping-privacy {
+    text-align: center; }
+    .footer-container .shipping-privacy a {
+      margin-left: auto;
+      color: #000; }
+  .footer-container .footer-link {
+    text-align: center;
+    font-size: 180%;
+    margin: auto 0; }
+  .footer-container .social-links {
+    text-align: center;
+    margin: 15px 0 15px 0; }
+    .footer-container .social-links .footer-social-icon {
+      padding-left: 5px;
+      width: 15%; }
+      @media (min-width: 768px) {
+        .footer-container .social-links .footer-social-icon {
+          width: 100%;
+          padding: 20px 0 20px 20px; } }
+      @media (min-width: 1200px) {
+        .footer-container .social-links .footer-social-icon {
+          width: 50%; } }
+
+#hero-image {
+  text-align: center !important; }
+
+img[title="hero-image"] {
+  width: 35% !important; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

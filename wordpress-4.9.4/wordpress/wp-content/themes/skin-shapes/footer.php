@@ -13,41 +13,30 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_sidebar( 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer">
+<div class="row footer-container">
+				<div class="col-md-3 offset-md-1 shipping-privacy footer-content">
+					<a href="#" class="footer-link">Shipping</a>
+					<span> | </span>
+					<a href="#" class="footer-link">Privacy</a>
+				</div>
+				<div class="col-md-3 offset-md-1">
+										<div class="row">
 
-	<div class="<?php echo esc_attr( $container ); ?>">
 
-		<div class="row">
+						<div class="col-md-6 col-xs-6 social-links ">					<a href="https://www.instagram.com/skinshapes/"><img class="footer-social-icon footer-content" src="http://localhost:8080/skin-shapes-wordpress/wordpress/wp-content/themes/skin-shapes/images/Instagram_icon.png" ></a>
+						</div>
 
-			<div class="col-md-12">
-
-				<footer class="site-footer" id="colophon">
-
-					<div class="site-info">
-
-							<a href="<?php  echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf( 
-							/* translators:*/
-							esc_html__( 'Proudly powered by %s', 'understrap' ),'WordPress' ); ?></a>
-								<span class="sep"> | </span>
-					
-							<?php printf( // WPCS: XSS ok.
-							/* translators:*/
-								esc_html__( 'Theme: %1$s by %2$s.', 'understrap' ), $the_theme->get( 'Name' ),  '<a href="'.esc_url( __('http://understrap.com', 'understrap')).'">understrap.com</a>' ); ?> 
-				
-							(<?php printf( // WPCS: XSS ok.
-							/* translators:*/
-								esc_html__( 'Version: %1$s', 'understrap' ), $the_theme->get( 'Version' ) ); ?>)
-					</div><!-- .site-info -->
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
-
-	</div><!-- container end -->
-
-</div><!-- wrapper end -->
+						<div class="col-md-6 col-xs-6 social-links ">
+							<a href="https://www.facebook.com/SKINSHAPES/">
+							<img class="footer-social-icon footer-content" src="http://localhost:8080/skin-shapes-wordpress/wordpress/wp-content/themes/skin-shapes/images/facebook_icon.png">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 offset-md-1 footer-content">
+					<p class="footer-link"><a href="http://scoder.com.au">	&copy; Website by Scoder</a></p>
+				</div>
+			</div>
 
 </div><!-- #page we need this extra closing tag here -->
 

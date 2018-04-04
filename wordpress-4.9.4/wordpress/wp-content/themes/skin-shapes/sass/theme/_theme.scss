@@ -1,2 +1,143 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
+//************TOP NAV STYLES******************//
+//    (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+
+//Body font
+body {
+	font-family: 'Amatic SC', cursive;
+
+}
+
+
+
+
+//styles for the top nav desktop
+#wrapper-navbar {
+	background-color: $headerFooter;
+	width: 100%;
+	text-align: center;
+	ul {
+		list-style-type: none;
+		display: inline;
+		margin: 0 auto;
+		width: 100%;
+
+		li {
+			display: inline-block;
+			padding: 10px 50px 10px 50px;
+			margin-left: auto;
+			font-size: 180%;
+			a {
+				color: #000;
+			}
+		}
+	}
+	@include media-breakpoint-up(xs) {
+		display: none;
+	}
+	@include media-breakpoint-up(md) {
+		display: inline-block;
+	}
+}
+
+//styles for the top nav mobile
+#topNavMobile {
+	@include media-breakpoint-up(md) {
+		display: none;
+	}
+
+	z-index: 999;
+	background-color: #FF96FF;
+
+	.mobile-menu-toggle {
+		float: right;
+		padding-right: 25px;
+		font-size: 200%;
+	}
+
+		ul.mobile-menu.inactive {
+			display: none;
+		}
+		ul.mobile-menu.active {
+			text-align: center;
+			height: 100vh;
+			margin: auto;
+			padding-left: 0;
+			li {
+				list-style: none;
+				line-height: 50px;
+				font-size: 200%;
+				color: #000;
+				border-bottom: 1px solid #ffff72;
+				padding: 10px 0 10px 0;
+				p.mobile-menu-p {
+					padding: 20px 0 20px 0;
+
+				}
+
+			}
+			.header-link-mobile {
+				color: #000;
+			}
+			.mobile-menu-icon {
+				float: left;
+				padding-left: 20px;
+			}
+		}
+}
+
+
+
+//styles for the footer
+
+.footer-container {
+	margin-top: 25px;
+	background-color: $headerFooter;
+	.footer-content {
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	.shipping-privacy {
+		text-align: center;
+			a {
+			margin-left: auto;
+			color: #000;
+		}
+	}
+	.footer-link {
+		text-align: center;
+		font-size: 180%;
+		margin: auto 0;
+	}
+	.social-links {
+		@include media-breakpoint-up(xs){
+			text-align: center;
+			margin: 15px 0 15px 0;
+			}
+		
+		.footer-social-icon {
+			@include media-breakpoint-up(md) {
+				width: 100%;
+				padding: 20px 0 20px 20px;
+				}
+			@include media-breakpoint-up(xl) {
+				width: 50%;
+			}
+			@include media-breakpoint-up(xs) {
+				padding-left: 5px;
+				width: 15%;
+			}
+			}
+		
+	}
+}
+
+//styles for the hero area
+#hero-image {
+	text-align: center !important;
+}
+
+img[title="hero-image"] {
+    width: 35% !important;
+}
