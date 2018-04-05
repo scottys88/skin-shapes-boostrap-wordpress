@@ -10464,6 +10464,9 @@ a.skip-link {
 body {
   font-family: 'Amatic SC', cursive; }
 
+.entry-header .entry-title {
+  display: none; }
+
 #wrapper-navbar {
   background-color: #efefef;
   width: 100%;
@@ -10551,6 +10554,37 @@ body {
 
 img[title="hero-image"] {
   width: 35% !important; }
+
+.woocommerce-ordering {
+  float: none !important;
+  width: 25%; }
+
+.woocommerce span.onsale {
+  background-color: #FF96FF !important; }
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+  font-size: 200%;
+  color: #000; }
+
+.woocommerce ul.products li.product .price {
+  font-size: 150%;
+  color: #000; }
+
+.btn-primary.disabled, .btn-primary, .btn-outline-primary,
+.wpcf7 input[type=submit] {
+  font-size: 200%;
+  width: auto;
+  background-color: #F1B861;
+  border-color: #d18e28;
+  padding: 20px 20px 20px 20px;
+  color: #000; }
+
+.btn-primary.disabled:hover, .btn-primary:hover, .btn-outline-primary:hover, .wpcf7 input:hover[type=submit] {
+  background-color: #eb9e28;
+  border-color: #d18e28; }
+
+.woocommerce-page div.product .woocommerce-tabs, .woocommerce div.product p.price, .lead, .woocommerce div.product form.cart .variations {
+  font-size: 150%; }
 
 /*
 * Use existing Bootstrap 4 classes and
