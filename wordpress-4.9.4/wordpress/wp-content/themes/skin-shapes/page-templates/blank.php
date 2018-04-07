@@ -28,6 +28,17 @@
 	<?php get_template_part( 'loop-templates/content', 'blank' ); ?>
 
 <?php endwhile; // end of the loop. ?>
+	<div class="row slider-container" id="slider-container">
+ <!--<div>
+ <img src="img/20905178_298813743927719_526571709273210880_n.jpg">
+ </div>
+ <div>
+ <img src="img/21041451_1957240234549049_2780761388790841344_n.jpg">
+ </div>
+ <div>
+ <img src="img/22499704_136683347059846_3180264708200464384_n.jpg">
+ </div> -->
+ </div>
 <?php wp_footer(); ?>
 </body>
 </html>

@@ -37,6 +37,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php endwhile; // end of the loop. ?>
 
 				</main><!-- #main -->
+				
+
 
 			</div><!-- #primary -->
 
