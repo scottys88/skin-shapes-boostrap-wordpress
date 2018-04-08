@@ -21,27 +21,28 @@ body {
 	background-color: $headerFooter;
 	width: 100%;
 	text-align: center;
-	ul {
-		list-style-type: none;
-		display: inline;
-		margin: 0 auto;
-		width: 100%;
-
-		li {
-			display: inline-block;
-			padding: 10px 50px 10px 50px;
-			margin-left: auto;
-			font-size: 180%;
-			a {
-				color: #000;
+	.navbar-toggler-icon { 
+		stroke: black;
+		ul {
+			list-style-type: none;
+			margin: 0 auto;
+			width: 100%;
+			li {
+				display: inline-block;
+				padding: 10px 50px 10px 50px;
+				margin-left: auto;
+				font-size: 180%;
+				a {
+					color: #000;
+				}
 			}
 		}
-	}
-	@include media-breakpoint-up(xs) {
-		display: none;
-	}
-	@include media-breakpoint-up(md) {
-		display: inline-block;
+		@include media-breakpoint-up(xs) {
+
+		}
+		@include media-breakpoint-up(md) {
+
+		}
 	}
 }
 

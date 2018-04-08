@@ -10470,23 +10470,20 @@ body {
 #wrapper-navbar {
   background-color: #efefef;
   width: 100%;
-  text-align: center;
-  display: none; }
-  #wrapper-navbar ul {
-    list-style-type: none;
-    display: inline;
-    margin: 0 auto;
-    width: 100%; }
-    #wrapper-navbar ul li {
-      display: inline-block;
-      padding: 10px 50px 10px 50px;
-      margin-left: auto;
-      font-size: 180%; }
-      #wrapper-navbar ul li a {
-        color: #000; }
-  @media (min-width: 768px) {
-    #wrapper-navbar {
-      display: inline-block; } }
+  text-align: center; }
+  #wrapper-navbar .navbar-toggler-icon {
+    stroke: black; }
+    #wrapper-navbar .navbar-toggler-icon ul {
+      list-style-type: none;
+      margin: 0 auto;
+      width: 100%; }
+      #wrapper-navbar .navbar-toggler-icon ul li {
+        display: inline-block;
+        padding: 10px 50px 10px 50px;
+        margin-left: auto;
+        font-size: 180%; }
+        #wrapper-navbar .navbar-toggler-icon ul li a {
+          color: #000; }
 
 #topNavMobile {
   z-index: 999;
