@@ -10599,7 +10599,7 @@ img[title="hero-image"] {
     font-size: 150%;
     line-height: 1.5;
     visibility: visible;
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: visibility 0s, opacity 0.5s linear;
     transition: visibility 0s, opacity 0.5s linear;
     color: #fff !important;
@@ -10615,7 +10615,7 @@ img[title="hero-image"] {
             height: 100% !important; } }
   .slider-container .slick-track div.caption-container.slick-slide p.insta-caption:hover {
     visibility: visible;
-    opacity: 1; }
+    opacity: 0; }
 
 #et_builder_outer_content p.insta-caption {
   color: #fff !important; }

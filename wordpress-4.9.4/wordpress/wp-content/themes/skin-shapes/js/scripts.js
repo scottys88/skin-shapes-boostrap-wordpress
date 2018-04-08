@@ -60,7 +60,10 @@ jQuery('.mobile-menu-toggle').click(function() {
  		})
  	bigfeed.run();
 
- 	
+
+//script to show and hide instagram caption on hover
+
+
 
 
     

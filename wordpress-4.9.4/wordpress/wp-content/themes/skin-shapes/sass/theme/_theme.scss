@@ -206,7 +206,7 @@ img[title="hero-image"] {
 				font-size: 150%;
 				line-height: 1.5;
 				visibility: visible;
-				opacity: 0;
+				opacity: 1;
   				transition: visibility 0s, opacity 0.5s linear;
 				color: #fff !important;
 				position: absolute;
@@ -229,7 +229,7 @@ img[title="hero-image"] {
 			}
 			p.insta-caption:hover {
 				  visibility: visible;
-				  opacity: 1;
+				  opacity: 0;
 			}
 		}
 	}
