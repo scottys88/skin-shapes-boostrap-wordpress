@@ -38,7 +38,7 @@ jQuery('.mobile-menu-toggle').click(function() {
 	 	target: 'slider-container',
 	 	clientId: 'f144b7bbf1414833a1f523eea96f9329',
         resolution: 'standard_resolution',
-        template: '<div><a href="{{link}}"><img src="{{image}}"></a></div>',
+        template: '<div class="caption-container"><a href="{{link}}"><div><p class="insta-caption">"{{caption}}"</p></div><img src="{{image}}"></a></div>',
 	    accessToken: '3293670556.f144b7b.6a19faba7c3447049aad844021b1d272',
         after: function () {
        		jQuery('.slider-container').slick({
