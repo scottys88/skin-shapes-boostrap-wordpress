@@ -10590,7 +10590,7 @@ img[title="hero-image"] {
   border-top: 10px solid #FF96FF !important;
   border-bottom: 10px solid #FF96FF !important;
   background-color: #EFEFEF  !important; }
-  .slider-container .slick-track div.caption-container.slick-slide p.insta-caption {
+  .slider-container .slick-track div.caption-container.slick-slide p.instaCaption {
     word-break: normal;
     max-width: 480px;
     font-size: 150%;
@@ -10603,14 +10603,14 @@ img[title="hero-image"] {
     position: absolute;
     padding: 15px 15px 15px 15px !important;
     background-color: rgba(255, 150, 255, 0.85) !important; }
-    .slider-container .slick-track div.caption-container.slick-slide p.insta-caption img.emoji {
+    .slider-container .slick-track div.caption-container.slick-slide p.instaCaption img.emoji {
       width: 10px !important; }
-      .slider-container .slick-track div.caption-container.slick-slide p.insta-caption img.emoji img {
+      .slider-container .slick-track div.caption-container.slick-slide p.instaCaption img.emoji img {
         width: 100% !important; }
         @media (min-width: 768px) {
-          .slider-container .slick-track div.caption-container.slick-slide p.insta-caption img.emoji img {
+          .slider-container .slick-track div.caption-container.slick-slide p.instaCaption img.emoji img {
             height: 100% !important; } }
-  .slider-container .slick-track div.caption-container.slick-slide p.insta-caption:hover {
+  .slider-container .slick-track div.caption-container.slick-slide p.instaCaption.active {
     visibility: visible;
     opacity: 0; }
 

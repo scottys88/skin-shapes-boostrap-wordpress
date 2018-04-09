@@ -38,7 +38,7 @@ jQuery('.mobile-menu-toggle').click(function() {
 	 	target: 'slider-container',
 	 	clientId: 'f144b7bbf1414833a1f523eea96f9329',
         resolution: 'standard_resolution',
-        template: '<div class="caption-container"><a href="{{link}}"><div><p class="insta-caption">"{{caption}}"</p></div><img src="{{image}}"></a></div>',
+        template: '<div class="caption-container"><a href="{{link}}"><p class="instaCaption">"{{caption}}"</p><img src="{{image}}"></a></div>',
 	    accessToken: '3293670556.f144b7b.6a19faba7c3447049aad844021b1d272',
         after: function () {
        		jQuery('.slider-container').slick({
@@ -52,8 +52,8 @@ jQuery('.mobile-menu-toggle').click(function() {
 				swipeToSlide: true,
 				slidestoshow: 1,
 				slidesToScroll: 1,
-  				autoplay: true,
-				autoplaySpeed: 2000,
+  				//autoplay: true,
+				//autoplaySpeed: 2000,
 				infinite: true
 			  });
 			}
@@ -62,6 +62,21 @@ jQuery('.mobile-menu-toggle').click(function() {
 
 
 //script to show and hide instagram caption on hover
+
+function removeCaption(e) {
+	const instaCaption = this.querySelector('.instaCaption');
+	if(!instaCaption) return;
+	instaCaption.classList.toggle('active');
+}
+
+window.setTimeout(function(){
+	const photos = document.querySelectorAll('.caption-container');
+	var checkExist = setInterval(function() {
+		if (photos.length) {
+		photos.forEach(instaCaption => instaCaption.addEventListener('mouseover', removeCaption));
+		}
+	}, 100);
+}, 1000);
 
 
 

@@ -201,7 +201,7 @@ img[title="hero-image"] {
 	background-color: #EFEFEF  !important;
 	.slick-track {
 		div.caption-container.slick-slide {
-			p.insta-caption {
+			p.instaCaption {
 				word-break: normal;
 				max-width:  480px;
 				font-size: 150%;
@@ -228,7 +228,7 @@ img[title="hero-image"] {
 					}
 				}
 			}
-			p.insta-caption:hover {
+			p.instaCaption.active {
 				  visibility: visible;
 				  opacity: 0;
 			}
