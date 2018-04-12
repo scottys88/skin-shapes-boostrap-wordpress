@@ -10476,7 +10476,10 @@ body {
     #wrapper-navbar {
       background-color: #efefef;
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      position: static; }
+      #wrapper-navbar .navbar {
+        padding: 0 1rem; }
       #wrapper-navbar ul#main-menu {
         list-style-type: none;
         margin: 0 auto;
@@ -10484,12 +10487,21 @@ body {
         font-size: 100%; }
         #wrapper-navbar ul#main-menu li {
           display: inline-block;
-          padding: 10px 50px 10px 50px;
+          padding: 0px 50px;
           margin-left: auto;
           font-size: 180%;
-          border-bottom: none; }
+          border-bottom: none;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          -webkit-transition: color 0.2s ease, border-bottom 0.2s ease;
+          transition: color 0.2s ease, border-bottom 0.2s ease; }
           #wrapper-navbar ul#main-menu li a {
-            color: #000; } }
+            color: #000; }
+        #wrapper-navbar ul#main-menu li:hover {
+          color: #453d3d;
+          border-bottom: 1px solid #FF96FF;
+          border-bottom-width: 5px;
+          margin-bottom: 0px; } }
   #wrapper-navbar #main-menu {
     text-align: center;
     font-size: 200%; }
@@ -10500,38 +10512,6 @@ body {
       border-bottom: none; }
   #wrapper-navbar .navbar-toggler {
     border: none; }
-
-#topNavMobile {
-  z-index: 999;
-  background-color: #FF96FF; }
-  @media (min-width: 768px) {
-    #topNavMobile {
-      display: none; } }
-  #topNavMobile .mobile-menu-toggle {
-    float: right;
-    padding-right: 25px;
-    font-size: 200%; }
-  #topNavMobile ul.mobile-menu.inactive {
-    display: none; }
-  #topNavMobile ul.mobile-menu.active {
-    text-align: center;
-    height: 100vh;
-    margin: auto;
-    padding-left: 0; }
-    #topNavMobile ul.mobile-menu.active li {
-      list-style: none;
-      line-height: 50px;
-      font-size: 200%;
-      color: #000;
-      border-bottom: 1px solid #ffff72;
-      padding: 10px 0 10px 0; }
-      #topNavMobile ul.mobile-menu.active li p.mobile-menu-p {
-        padding: 20px 0 20px 0; }
-    #topNavMobile ul.mobile-menu.active .header-link-mobile {
-      color: #000; }
-    #topNavMobile ul.mobile-menu.active .mobile-menu-icon {
-      float: left;
-      padding-left: 20px; }
 
 .footer-container {
   margin-top: 25px;
@@ -10547,7 +10527,10 @@ body {
   .footer-container .footer-link {
     text-align: center;
     font-size: 180%;
-    margin: auto 0; }
+    margin: auto 0;
+    color: #000; }
+    .footer-container .footer-link a {
+      color: #000; }
   .footer-container .social-links {
     text-align: center;
     margin: 15px 0 15px 0; }
@@ -10632,6 +10615,9 @@ img[title="hero-image"] {
 
 #et_builder_outer_content p.insta-caption {
   color: #fff !important; }
+
+.et_pb_row {
+  margin-left: 20px; }
 
 /*
 * Use existing Bootstrap 4 classes and

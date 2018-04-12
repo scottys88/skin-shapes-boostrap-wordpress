@@ -8,6 +8,7 @@ body {
 	font-family: 'Amatic SC', cursive;
 }
 
+
 //Removes the default page title displaying on site
 .entry-header {
 	.entry-title {
@@ -22,6 +23,11 @@ body {
 	background-color: $headerFooter;
 	width: 100%;
 	text-align: center;
+	position: static;
+	
+		.navbar {
+			padding: 0 1rem;
+		}
 		ul#main-menu {
 			list-style-type: none;
 			margin: 0 auto;
@@ -29,14 +35,24 @@ body {
 			font-size: 100%;
 			li {
 				display: inline-block;
-				padding: 10px 50px 10px 50px;
+				padding: 0px 50px;
 				margin-left: auto;
 				font-size: 180%;
 				border-bottom: none;
-				
+				margin-top: 5px;
+				margin-bottom: 5px;
+				transition: color 0.2s ease,
+							border-bottom 0.2s ease;
 				a {
 					color: #000;
 				}
+			}
+			li:hover {
+				color: #453d3d;
+				border-bottom: 1px solid #FF96FF;
+				border-bottom-width: 5px;
+				margin-bottom: 0px;
+				
 			}
 		}
 	}
@@ -69,54 +85,6 @@ body {
 
 
 
-//styles for the top nav mobile
-#topNavMobile {
-	@include media-breakpoint-up(md) {
-		display: none;
-	}
-
-	z-index: 999;
-	background-color: #FF96FF;
-
-	.mobile-menu-toggle {
-		float: right;
-		padding-right: 25px;
-		font-size: 200%;
-	}
-
-		ul.mobile-menu.inactive {
-			display: none;
-		}
-		ul.mobile-menu.active {
-			text-align: center;
-			height: 100vh;
-			margin: auto;
-			padding-left: 0;
-			li {
-				list-style: none;
-				line-height: 50px;
-				font-size: 200%;
-				color: #000;
-				border-bottom: 1px solid #ffff72;
-				padding: 10px 0 10px 0;
-				p.mobile-menu-p {
-					padding: 20px 0 20px 0;
-
-				}
-
-			}
-			.header-link-mobile {
-				color: #000;
-			}
-			.mobile-menu-icon {
-				float: left;
-				padding-left: 20px;
-			}
-		}
-}
-
-
-
 //styles for the footer
 
 .footer-container {
@@ -137,6 +105,10 @@ body {
 		text-align: center;
 		font-size: 180%;
 		margin: auto 0;
+		color: #000;
+		a {
+			color: #000;
+		}
 	}
 	.social-links {
 		@include media-breakpoint-up(xs){
@@ -155,10 +127,9 @@ body {
 			@include media-breakpoint-up(xs) {
 				padding-left: 5px;
 				width: 15%;
+				}
 			}
-			}
-		
-	}
+		}
 }
 
 //styles for the hero area
@@ -264,4 +235,7 @@ img[title="hero-image"] {
 	color: #fff !important;
 }
 
+.et_pb_row {
+	margin-left: 20px;
+}
 
