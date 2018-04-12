@@ -18,33 +18,56 @@ body {
 
 //styles for the top nav desktop
 #wrapper-navbar {
+	@include media-breakpoint-up(md) {
 	background-color: $headerFooter;
 	width: 100%;
 	text-align: center;
-	.navbar-toggler-icon { 
-		stroke: black;
-		ul {
+		ul#main-menu {
 			list-style-type: none;
 			margin: 0 auto;
 			width: 100%;
+			font-size: 100%;
 			li {
 				display: inline-block;
 				padding: 10px 50px 10px 50px;
 				margin-left: auto;
 				font-size: 180%;
+				border-bottom: none;
+				
 				a {
 					color: #000;
 				}
 			}
 		}
-		@include media-breakpoint-up(xs) {
-
+	}
+	@include media-breakpoint-up(xs) {
+		background-color: #FF96FF;
+		position: fixed;
+		z-index: 99;
+		width: 100%;
+		#main-menu {
+			text-align: center;
+			font-size: 200%;
+			li {
+				border-bottom: 1px solid #ffff72;
+				margin: 15px -50px 15px -50px;
+			}
+			li:last-child {
+				border-bottom: none;
+			}
 		}
-		@include media-breakpoint-up(md) {
-
+		
+		.navbar-toggler {
+			border: none;
 		}
+		.navbar-toggler-icon {
+			
+		}	
 	}
 }
+
+
+
 
 //styles for the top nav mobile
 #topNavMobile {
