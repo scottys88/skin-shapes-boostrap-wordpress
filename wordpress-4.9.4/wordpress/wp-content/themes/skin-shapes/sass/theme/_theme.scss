@@ -154,6 +154,10 @@ img[title="hero-image"] {
 
 
 //WooCommerce styling
+#full-width-page-wrapper, #woocommerce-wrapper {
+	padding-top: 100px;
+}
+
 .woocommerce-ordering {
 	float: none !important;
 	width: 25%;
@@ -188,10 +192,17 @@ img[title="hero-image"] {
 	border-color: #d18e28;
 }
 
+#stripe-card-element, #stripe-exp-element, #stripe-cvc-element {
+	width: 100%;
+}
+
 //Wooceommerce increases the font size for the woocommerce price, excerpt and sizes
 
 .woocommerce-page div.product .woocommerce-tabs,.woocommerce div.product p.price, .lead, .woocommerce div.product form.cart .variations  {
-	font-size: 150%;
+	font-size: 100%;
+	@include media-breakpoint-up(md) {
+				font-size: 150%;
+	}
 }
 
 .woocommerce ul.products li.product {
