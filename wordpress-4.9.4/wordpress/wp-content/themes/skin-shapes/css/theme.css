@@ -10467,26 +10467,36 @@ body {
 .entry-header .entry-title {
   display: none; }
 
-#wrapper-navbar {
+.wrapper-navbar.Scroll-down {
+  top: -100%;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s; }
+
+.wrapper-navbar {
   background-color: #FF96FF;
   position: fixed;
   z-index: 99;
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s; }
   @media (min-width: 768px) {
-    #wrapper-navbar {
+    .wrapper-navbar {
       background-color: #efefef;
       width: 100%;
       text-align: center;
-      position: static; }
-      #wrapper-navbar .navbar {
+      position: fixed;
+      top: 25px;
+      -webkit-transition: top 0.5s;
+      transition: top 0.5s; }
+      .wrapper-navbar .navbar {
         padding: 0 1rem; }
-      #wrapper-navbar ul#main-menu {
+      .wrapper-navbar ul#main-menu {
         list-style-type: none;
         margin: 0 auto;
         width: 100%;
         font-size: 100%;
         height: auto; }
-        #wrapper-navbar ul#main-menu li {
+        .wrapper-navbar ul#main-menu li {
           display: inline-block;
           padding: 0px 50px;
           margin-left: auto;
@@ -10496,23 +10506,23 @@ body {
           margin-bottom: 5px;
           -webkit-transition: color 0.2s ease, border-bottom 0.2s ease;
           transition: color 0.2s ease, border-bottom 0.2s ease; }
-          #wrapper-navbar ul#main-menu li a {
+          .wrapper-navbar ul#main-menu li a {
             color: #000; }
-        #wrapper-navbar ul#main-menu li:hover {
+        .wrapper-navbar ul#main-menu li:hover {
           color: #453d3d;
           border-bottom: 1px solid #FF96FF;
           border-bottom-width: 5px;
           margin-bottom: 0px; } }
-  #wrapper-navbar #main-menu {
+  .wrapper-navbar #main-menu {
     text-align: center;
     font-size: 200%;
     height: 100vh; }
-    #wrapper-navbar #main-menu li {
+    .wrapper-navbar #main-menu li {
       border-bottom: 1px solid #ffff72;
       margin: 15px -50px 15px -50px; }
-    #wrapper-navbar #main-menu li:last-child {
+    .wrapper-navbar #main-menu li:last-child {
       border-bottom: none; }
-  #wrapper-navbar .navbar-toggler {
+  .wrapper-navbar .navbar-toggler {
     border: none; }
 
 .footer-container {
@@ -10609,7 +10619,10 @@ img[title="hero-image"] {
     background-color: rgba(255, 150, 255, 0.85) !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    width: 400px !important; }
+    width: 400px !important;
+    font-size: 120%;
+    padding-left: 25px !important;
+    padding-right: 25px !important; }
     .slider-container .slick-track div.caption-container.slick-slide a p.instaCaption img.emoji {
       width: 10px !important; }
       .slider-container .slick-track div.caption-container.slick-slide a p.instaCaption img.emoji img {

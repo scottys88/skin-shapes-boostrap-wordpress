@@ -18,13 +18,21 @@ body {
 
 
 //styles for the top nav desktop
-#wrapper-navbar {
+.wrapper-navbar.Scroll-down {
+		top: -100%;
+		transition: top 0.5s;
+}
+
+
+.wrapper-navbar {
 	@include media-breakpoint-up(md) {
 	background-color: $headerFooter;
 	width: 100%;
 	text-align: center;
-	position: static;
-	
+	position: fixed;
+	top: 25px;
+	transition: top 0.5s;
+		
 		.navbar {
 			padding: 0 1rem;
 		}
@@ -62,6 +70,7 @@ body {
 		position: fixed;
 		z-index: 99;
 		width: 100%;
+		transition: top 0.5s;
 		#main-menu {
 			text-align: center;
 			font-size: 200%;
@@ -219,6 +228,10 @@ img[title="hero-image"] {
 							margin-left: auto !important;
 							margin-right: auto !important;
 							width: 400px !important;
+							font-size: 120%;
+							padding-left: 25px !important;
+							padding-right: 25px !important;
+							
 
 						}
 					img.emoji {
