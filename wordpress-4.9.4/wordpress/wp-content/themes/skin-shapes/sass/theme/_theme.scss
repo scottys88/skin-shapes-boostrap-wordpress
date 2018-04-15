@@ -33,6 +33,7 @@ body {
 			margin: 0 auto;
 			width: 100%;
 			font-size: 100%;
+			height: auto;
 			li {
 				display: inline-block;
 				padding: 0px 50px;
@@ -64,6 +65,7 @@ body {
 		#main-menu {
 			text-align: center;
 			font-size: 200%;
+			height: 100vh;
 			li {
 				border-bottom: 1px solid #ffff72;
 				margin: 15px -50px 15px -50px;
@@ -195,18 +197,30 @@ img[title="hero-image"] {
 	background-color: #EFEFEF  !important;
 	.slick-track {
 		div.caption-container.slick-slide {
+			a {
+			img {
+				text-align: center;
+			}
 			p.instaCaption {
+				
 				word-break: normal;
-				max-width:  480px;
+				max-width:  640px;
+				text-align: center !important;
 				font-size: 150%;
 				line-height: 1.5;
 				visibility: visible;
 				opacity: 1;
   				transition: visibility 0s, opacity 0.5s linear;
 				color: #fff !important;
-				position: absolute;
+				position: relative;
 				padding: 15px 15px 15px 15px !important;
 				background-color: rgba(255, 150, 255, 0.85) !important;
+				@include media-breakpoint-up(xs) {
+							margin-left: auto !important;
+							margin-right: auto !important;
+							width: 400px !important;
+
+						}
 					img.emoji {
 						width: 10px !important;
 
@@ -226,6 +240,7 @@ img[title="hero-image"] {
 				  visibility: visible;
 				  opacity: 0;
 			}
+		}
 		}
 	}
 }

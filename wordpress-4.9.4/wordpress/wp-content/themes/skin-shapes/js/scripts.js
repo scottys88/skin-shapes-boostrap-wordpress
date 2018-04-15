@@ -30,6 +30,8 @@ jQuery('.mobile-menu-toggle').click(function() {
 
 //script to bring in instagram feed
 
+
+
  var bigfeed = new Instafeed({
         get: 'user',
 	 	//get: 'tagged',
@@ -38,7 +40,7 @@ jQuery('.mobile-menu-toggle').click(function() {
 	 	target: 'slider-container',
 	 	clientId: 'f144b7bbf1414833a1f523eea96f9329',
         resolution: 'standard_resolution',
-        template: '<div class="caption-container"><a href="{{link}}"><p class="instaCaption">"{{caption}}"</p><img src="{{image}}"></a></div>',
+        template: '<div class="caption-container"><a href="{{link}}"><img src="{{image}}"><p class="instaCaption" style="color: #fff !important;"><span>@skinshapes: </span>"{{caption}}"</p></a></div>',
 	    accessToken: '3293670556.f144b7b.6a19faba7c3447049aad844021b1d272',
         after: function () {
        		jQuery('.slider-container').slick({
@@ -52,9 +54,20 @@ jQuery('.mobile-menu-toggle').click(function() {
 				swipeToSlide: true,
 				slidestoshow: 1,
 				slidesToScroll: 1,
-  				//autoplay: true,
-				//autoplaySpeed: 2000,
-				infinite: true
+  				autoplay: true,
+				autoplaySpeed: 4000,
+				infinite: true,
+						responsive: [
+						{
+						  breakpoint: 576,
+						  settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							infinite: true,
+							dots: false,
+							autoplay: false
+						  }
+						}]
 			  });
 			}
  		})
@@ -63,6 +76,7 @@ jQuery('.mobile-menu-toggle').click(function() {
 
 //script to show and hide instagram caption on hover
 
+/*
 function removeCaption(e) {
 	const instaCaption = this.querySelector('.instaCaption');
 	if(!instaCaption) return;
@@ -77,6 +91,7 @@ window.setTimeout(function(){
 		}
 	}, 100);
 }, 1000);
+*/
 
 
 

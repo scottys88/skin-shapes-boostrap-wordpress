@@ -10484,7 +10484,8 @@ body {
         list-style-type: none;
         margin: 0 auto;
         width: 100%;
-        font-size: 100%; }
+        font-size: 100%;
+        height: auto; }
         #wrapper-navbar ul#main-menu li {
           display: inline-block;
           padding: 0px 50px;
@@ -10504,7 +10505,8 @@ body {
           margin-bottom: 0px; } }
   #wrapper-navbar #main-menu {
     text-align: center;
-    font-size: 200%; }
+    font-size: 200%;
+    height: 100vh; }
     #wrapper-navbar #main-menu li {
       border-bottom: 1px solid #ffff72;
       margin: 15px -50px 15px -50px; }
@@ -10589,9 +10591,12 @@ img[title="hero-image"] {
   border-top: 10px solid #FF96FF !important;
   border-bottom: 10px solid #FF96FF !important;
   background-color: #EFEFEF  !important; }
-  .slider-container .slick-track div.caption-container.slick-slide p.instaCaption {
+  .slider-container .slick-track div.caption-container.slick-slide a img {
+    text-align: center; }
+  .slider-container .slick-track div.caption-container.slick-slide a p.instaCaption {
     word-break: normal;
-    max-width: 480px;
+    max-width: 640px;
+    text-align: center !important;
     font-size: 150%;
     line-height: 1.5;
     visibility: visible;
@@ -10599,17 +10604,20 @@ img[title="hero-image"] {
     -webkit-transition: visibility 0s, opacity 0.5s linear;
     transition: visibility 0s, opacity 0.5s linear;
     color: #fff !important;
-    position: absolute;
+    position: relative;
     padding: 15px 15px 15px 15px !important;
-    background-color: rgba(255, 150, 255, 0.85) !important; }
-    .slider-container .slick-track div.caption-container.slick-slide p.instaCaption img.emoji {
+    background-color: rgba(255, 150, 255, 0.85) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 400px !important; }
+    .slider-container .slick-track div.caption-container.slick-slide a p.instaCaption img.emoji {
       width: 10px !important; }
-      .slider-container .slick-track div.caption-container.slick-slide p.instaCaption img.emoji img {
+      .slider-container .slick-track div.caption-container.slick-slide a p.instaCaption img.emoji img {
         width: 100% !important; }
         @media (min-width: 768px) {
-          .slider-container .slick-track div.caption-container.slick-slide p.instaCaption img.emoji img {
+          .slider-container .slick-track div.caption-container.slick-slide a p.instaCaption img.emoji img {
             height: 100% !important; } }
-  .slider-container .slick-track div.caption-container.slick-slide p.instaCaption.active {
+  .slider-container .slick-track div.caption-container.slick-slide a p.instaCaption.active {
     visibility: visible;
     opacity: 0; }
 
